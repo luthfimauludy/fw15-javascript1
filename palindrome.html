@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome</title>
+  </head>
+  <body>
+    <script>
+      const input = "sinis";
+      let text = input.split(" ").join("").toLowerCase();
+      x = text.length - 1;
+
+      if (x >= 0) {
+        let result = "";
+        for (let a = x; a >= 0; a--) {
+          result += text[a];
+        }
+        if (text.length <= 2) {
+          console.log("Teks harus lebih dari 2 huruf!");
+        } else if (text == result) {
+          console.log("Palindrome");
+        } else if (text != result) {
+          console.log("Bukan palindrome");
+        }
+      }
+    </script>
+  </body>
+</html>

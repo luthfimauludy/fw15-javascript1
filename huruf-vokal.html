@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huruf Vokal</title>
+  </head>
+  <body>
+    <script>
+      function change(text) {
+        if (typeof text === "string" || text instanceof String) {
+          return text.replace(/[aiueo]/gi, "o");
+        }
+        return console.log("Tipe Data harus string!");
+      }
+
+      console.log(change("false"));
+    </script>
+  </body>
+</html>
