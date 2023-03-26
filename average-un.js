@@ -4,8 +4,7 @@ function nilaiRataRata() {
   const bahasaInggris = 86;
   const ipa = 69;
 
-  // diisi diisi angka 0 atau zero value untuk pengecekkan apakah
-  // nilai kosong atau tidak
+  // buat pengkondisian jika nilai-nilainya kosong
   if (mtk === 0 && bahasaIndonesia === 0 && bahasaInggris === 0 && ipa === 0) {
     return console.log("Semua nilai harus diisi!");
   } else if (mtk === 0) {
@@ -19,7 +18,7 @@ function nilaiRataRata() {
   }
 
   const average = (mtk + bahasaIndonesia + bahasaInggris + ipa) / 4;
-
+  // buat pengkondisian untuk kategori nilainya
   if (average >= 90) {
     console.log("Grade = A");
     console.log("Nilai Rata-rata: " + average);
@@ -37,4 +36,5 @@ function nilaiRataRata() {
     console.log("Nilai Rata-rata: " + average);
   }
 }
+// panggil function
 nilaiRataRata();
